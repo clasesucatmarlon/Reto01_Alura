@@ -1,0 +1,17 @@
+.col_izquierda {
+  @include cajasPrincipales(67%);
+  
+  .logo {
+    background-color: blue;
+    padding: 3rem;
+    img {
+      width: 8rem;
+    }
+  }
+  .content {
+    background-color: rgb(182, 235, 235);
+    textarea {
+      width: 80%;
+    }
+  }
+}

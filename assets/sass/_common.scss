@@ -1,0 +1,17 @@
+/* ****************************************** */
+/* MAIN */
+/* ****************************************** */
+body {
+  background-color: $color-background;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
