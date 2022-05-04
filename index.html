@@ -7,22 +7,39 @@
   <title>Encriptador</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="col_izquierda">
-      <div class="logo">
+  <main>
+    <section class="col_izquierda">
+
+      <header class="header">
         <img src="./assets/images/Logo.png" alt="">
-      </div>
+      </header>
+
       <div class="content">
-        
+        <textarea
+          type="text"
+          name=""
+          id="textEncritarDesencriptar"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese texto a encriptar...">
+        </textarea>
+        <h6>Sólo letras minúsculas y sin acentos</h6>
+        <div>
+          <button type="button" onclick="btnEncriptar()" class="btnEncriptar">Encriptar</button>
+          <button type="button" class="btnDesencriptar">Desencriptar</button>
+        </div>
       </div>
-    </div>
+    </section>
     
-    <div class="col_derecha">
+    <section class="col_derecha">
       <img src="./assets/images/people.png" alt="">
-      
-    </div>
-  </div>
+      <textarea name="" id="textEncriptadoDesencriptado" cols="30" rows="10"></textarea>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
   
 </body>
 </html>
