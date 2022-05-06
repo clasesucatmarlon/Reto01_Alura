@@ -10,7 +10,7 @@
 
 <body>
   <main>
-    <section class="col_izquierda">
+    <section class="col_left">
 
       <header class="header">
         <!-- <img src="./assets/images/Logo.png" alt=""> -->
@@ -18,23 +18,26 @@
         <hr class="line">
       </header>
 
-      <div class="content">
-        <textarea type="text" name="" id="textEncritarDesencriptar" placeholder="Ingrese texto a encriptar..."></textarea>
-        <h6>NOTA: <span>Sólo letras minúsculas y sin acentos</span></h6>
+      <div class="content"> 
+        <textarea type="text" name="" id="txtEncryptDecrypt" placeholder="Ingrese texto a encriptar..."></textarea>
+        <h6>NOTE: <span>Only lowercase letters and without accent</span></h6>
         <div class="buttons">
-          <button type="button" onclick="btnEncriptar()" class="btnEncriptar" >Encriptar</button>
-          <button type="button" class="btnDesencriptar">Desencriptar</button>
+          <button type="button" onclick="btnEncrypt()" class="btnEncrypt" >Encrypt</button>
+          <button type="button" onclick="btnDecrypt()"class="btnDecrypt">Decrypt</button>
         </div>
       </div>
 
-      <footer>
-        Hola
-      </footer>
     </section>
     
-    <section class="col_derecha">
+    <section class="col_right"> 
       <img src="./assets/images/people.png" alt="">
-      <textarea name="" id="textEncriptadoDesencriptado" cols="30" rows="10"></textarea>
+      <div class="output">
+        <textarea name="" id="txtEncryptionDecrypted" cols="30" rows="10"></textarea>
+        <button onclick="copyToClipBoard()">Copy</button>
+      </div>
+      <footer>
+        Here is the place for footer
+      </footer>
     </section>
   </main>
 
