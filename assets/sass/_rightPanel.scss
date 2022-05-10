@@ -6,8 +6,8 @@
   justify-content: space-between;
   img {
     margin-top: 2rem;
-    width: 55%;
-    height: 30%;
+    width: 50%;
+    height: 25%;
   }
   .output {
     display: flex;
@@ -18,27 +18,53 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
       width: 90%;
-      height: 25vh;
+      height: 20vh;
       resize: none;
       font-size: 1rem;
       padding: 1rem;
       border: 1px solid rgb(227, 224, 224);
       box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.45);
     }
-  }
-  .buttons {
-    margin: 0 auto;
-    margin-top: 2rem;
-    .btnCopy {
-      @include botones(4rem, 20rem, 1.75rem);
+    .buttons {
+      margin: 0 auto;
+      margin-top: 2rem;
+      .btnCopy {
+        @include botones(4rem, 20rem, 1.75rem);
+      }
+      :hover{
+        background-color: $color-hover;
+        color: $color-white;
+      }
     }
-    :hover{
-      background-color: $color-hover;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    background-color: black;
+    .copyright {
+      margin-top: 0.9rem;
       color: $color-white;
     }
+    .social {
+      padding: 1rem;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      a {
+        color: $color-white;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
   }
-}
 
-.footer {
-  font-size: 3rem;
 }
