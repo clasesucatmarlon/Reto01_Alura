@@ -73,7 +73,7 @@ main {
   background-color: #5366a2;
   border-radius: 0.75rem;
   height: 90%;
-  border: 2px solid rgb(91, 87, 87);
+  border: 2px solid #5b5757;
   -webkit-box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
@@ -89,7 +89,7 @@ main {
   font-size: 4rem;
   font-weight: 400;
   font-family: "Anton", sans-serif;
-  text-shadow: 5px 5px 5px rgb(71, 70, 70);
+  text-shadow: 5px 5px 5px #474646;
 }
 .col_left .header h1 span {
   font-size: 3rem;
@@ -97,7 +97,7 @@ main {
 }
 .col_left .header .line {
   border: 1px solid #5366a2;
-  box-shadow: 2px 2px 2px rgb(71, 70, 70);
+  box-shadow: 2px 2px 2px #474646;
 }
 .col_left .header img {
   width: 8rem;
@@ -116,7 +116,7 @@ main {
   resize: none;
   font-size: 1rem;
   padding: 1rem;
-  border: 1px solid rgb(227, 224, 224);
+  border: 1px solid #e3e0e0;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
 }
 .col_left .content h6 {
@@ -164,7 +164,7 @@ main {
   background-color: #5366a2;
   border-radius: 0.75rem;
   height: 90%;
-  border: 2px solid rgb(91, 87, 87);
+  border: 2px solid #5b5757;
   -webkit-box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 44px 5px rgba(0, 0, 0, 0.45);
@@ -175,16 +175,32 @@ main {
   justify-content: space-between;
 }
 .col_right img {
-  width: 80%;
-  height: 50%;
+  margin-top: 2rem;
+  width: 55%;
+  height: 30%;
 }
 .col_right .output {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin-top: 3rem;
+  align-items: center;
+  width: 80%;
 }
-.col_right button {
+.col_right .output textarea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  height: 25vh;
+  resize: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #e3e0e0;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
+}
+.col_right .buttons {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.col_right .buttons .btnCopy {
   height: 4rem;
   width: 20rem;
   border-radius: 1.75rem;
@@ -194,6 +210,14 @@ main {
   font-size: 1rem;
   font-weight: bold;
   box-shadow: 0px 0px 3px 3px rgba(65, 63, 63, 0.45);
+}
+.col_right .buttons :hover {
+  background-color: #0a3871;
+  color: white;
+}
+
+.footer {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

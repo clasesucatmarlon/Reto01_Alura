@@ -5,16 +5,40 @@
   align-items: center;
   justify-content: space-between;
   img {
-    width: 80%;
-    height: 50%;
+    margin-top: 2rem;
+    width: 55%;
+    height: 30%;
   }
   .output {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin-top: 3rem;
+    align-items: center;
+    width: 80%;
+    textarea {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 90%;
+      height: 25vh;
+      resize: none;
+      font-size: 1rem;
+      padding: 1rem;
+      border: 1px solid rgb(227, 224, 224);
+      box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.45);
+    }
   }
-  button {
-    @include botones(4rem, 20rem, 1.75rem);
+  .buttons {
+    margin: 0 auto;
+    margin-top: 2rem;
+    .btnCopy {
+      @include botones(4rem, 20rem, 1.75rem);
+    }
+    :hover{
+      background-color: $color-hover;
+      color: $color-white;
+    }
   }
+}
+
+.footer {
+  font-size: 3rem;
 }
